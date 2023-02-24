@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | QR code component</title>
+    <style>
+      body{
+        margin: 0;
+        font-size: 15px;
+      }
+      h1, p {
+        margin: 0px;
+        padding: 0px;
+      }
+      img {
+        max-width: 100%;
+        border-radius: 15px;
+        margin: 10px 20px;
+      }
+      .body-bg {
+        background: hsl(212, 45%, 89%);
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10px;
+        background-color: hsl(0, 0%, 100%);
+        margin: 10rem 35rem;
+        border-radius: 15px;
+        padding: 2rem;
+        gap: 15px;
+      }
+      .container h1 {
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+      }
+      .container p {
+        text-align: center;
+        color: hsl(220, 15%, 55%);
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      .footer, .footer a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        text-decoration: none;
+        margin-left: 2px;
+      }
+      @media (max-width: 500px){
+        .container {
+          margin-top: 10px;
+          margin: 35px;
+          gap: 15px;
+          padding: .5rem;
+          height: 600px;
+        }        
+        img {
+          height: 300px;
+        }
+        .container p {
+          margin-bottom: 10px;
+        }
+        .footer {
+
+          text-align: justify;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="body-bg">
+
+    <div class="container">
+      <img src="./images/image-qr-code.png" alt="">
+      <h1>Improve your front-end skills by building projects</h1>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+
+   
+  </body>
+  <footer class="footer">
+    Challenge by - <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/leomatth"> - Leonardo Mattheus - </a>.
+  </footer>
+</html>
